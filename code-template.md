@@ -2,6 +2,9 @@
 
 LeetCode Problems:
 - [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
+- [78. Subsets](https://leetcode.com/problems/subsets/)
+- [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+- [46. Permutations](https://leetcode.com/problems/permutations/)
 
 Template:
 ```py
@@ -12,11 +15,16 @@ class Solution(object):
         return res
 
     def dfs(self, s, idx, path, res):
+        # Backtrack
         if idx > 4:
             return
+
+        # Select candidate when condition satisfied
         if idx == 4 and not s:
             res.append(path[:-1])
             return
+
+        # Explore all potential candidates
         for i in range(1, len(s)+1):
             if s[:i]=='0' or (s[0]!='0' and 0 < int(s[:i]) < 256):
                 self.dfs(s[i:], idx+1, path+s[:i]+".", res)
