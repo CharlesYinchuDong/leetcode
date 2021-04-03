@@ -5,6 +5,11 @@ LeetCode Problems:
 - [78. Subsets](https://leetcode.com/problems/subsets/)
 - [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
 - [46. Permutations](https://leetcode.com/problems/permutations/)
+- [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
+- [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+- [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+- [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+- [842. Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
 
 Template:
 ```py
