@@ -45,3 +45,70 @@ One dimension:
 
 Two dimention:
 - [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+
+
+### Tree Traversal
+
+Iterative preorder:
+- [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+```py
+class Solution:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        stack = []
+        res = []
+
+        while stack or root:
+            if root:
+                res.append(root.val)
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack.pop()
+                root = tmpNode.right
+
+        return res
+```
+
+Iterative inorder:
+- [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+```py
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        stack = []
+        res = []
+
+        while stack or root:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack.pop()
+                res.append(tmpNode.val)
+                root = tmpNode.right
+
+        return res
+```
+
+Iterative postorder:
+- [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+```py
+class Solution:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
+        res = []
+        stack = []
+        last = None
+
+        while stack or root:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack[-1]
+                if tmpNode.right and tmpNode.right != last:
+                    root = tmpNode.right
+                else:
+                    res.append(tmpNode.val)
+                    last = stack.pop()
+
+        return res
+```
