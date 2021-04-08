@@ -40,3 +40,8 @@ One dimension:
 
 Two dimention:
 - [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+
+### Monotone Stack
+
+LeetCode Problems:
+- [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
