@@ -5,6 +5,11 @@ LeetCode Problems:
 - [78. Subsets](https://leetcode.com/problems/subsets/)
 - [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
 - [46. Permutations](https://leetcode.com/problems/permutations/)
+- [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
+- [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+- [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+- [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+- [842. Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
 
 Template:
 ```py
@@ -45,3 +50,69 @@ Two dimention:
 
 LeetCode Problems:
 - [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+
+### Tree Traversal
+
+Iterative preorder:
+- [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+```py
+class Solution:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        stack = []
+        res = []
+
+        while stack or root:
+            if root:
+                res.append(root.val)
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack.pop()
+                root = tmpNode.right
+
+        return res
+```
+
+Iterative inorder:
+- [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+```py
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        stack = []
+        res = []
+
+        while stack or root:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack.pop()
+                res.append(tmpNode.val)
+                root = tmpNode.right
+
+        return res
+```
+
+Iterative postorder:
+- [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+```py
+class Solution:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
+        res = []
+        stack = []
+        last = None
+
+        while stack or root:
+            if root:
+                stack.append(root)
+                root = root.left
+            else:
+                tmpNode = stack[-1]
+                if tmpNode.right and tmpNode.right != last:
+                    root = tmpNode.right
+                else:
+                    res.append(tmpNode.val)
+                    last = stack.pop()
+
+        return res
+```
