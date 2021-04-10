@@ -116,3 +116,34 @@ class Solution:
 
         return res
 ```
+
+BFS
+- [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+```py
+level = [root]
+res = []
+while level:
+    res.append([node.val for node in level])
+    level = [child for node in level for child in [node.left, node.right] if child]
+return res
+```
+
+### Union Find
+- [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+```py
+parent = [0] * N
+def find(x):
+    if parent[x] == 0:
+        return x
+    parent[x] = find(parent[x])
+    return parent[x]
+
+def union(x, y):
+    parent_x = find(x)
+    parent_y = find(y)
+    if parent_x == parent_y:
+        return False
+    parent[parent_x] = parent_y
+    return True
+```
