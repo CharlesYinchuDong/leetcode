@@ -11,6 +11,11 @@ LeetCode Problems:
 - [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 - [842. Split Array into Fibonacci Sequence](https://leetcode.com/problems/split-array-into-fibonacci-sequence/)
 
+Graph traversal
+- [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
+- [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+- [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+
 Template:
 ```py
 class Solution(object):
@@ -45,6 +50,8 @@ One dimension:
 
 Two dimention:
 - [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+- [322. Coin Change](https://leetcode.com/problems/coin-change/)
+- [518. Coin Change 2](https://leetcode.com/problems/coin-change-2/)
 
 ### Monotone Stack
 
