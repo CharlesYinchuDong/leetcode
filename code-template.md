@@ -57,6 +57,18 @@ Two dimention:
 
 LeetCode Problems:
 - [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+- [901. ]
+- [503. ]
+- [496. ]
+- [739. ]
+- [856. ]
+- [907. ]
+- [89. ]
+- [828. ]
+- [84. ]
+- [85. ]
+- [42. ]
+
 
 ### Tree Traversal
 
