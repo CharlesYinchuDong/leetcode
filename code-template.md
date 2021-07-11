@@ -166,3 +166,20 @@ def union(x, y):
     parent[parent_x] = parent_y
     return True
 ```
+
+
+### Binary search
+```py
+l, h = 0, len(a)
+
+while l < h:
+    m = (l + h) // 2
+
+    if :
+        l = m + 1
+    else:
+        h = m
+
+return l
+```
+
