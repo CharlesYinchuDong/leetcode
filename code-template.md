@@ -187,3 +187,12 @@ while l < h:
 return l
 ```
 
+### Substring and Subsequence
+
+Subsequence:
+- [516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)
+- [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+
+Substring:
+- [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
