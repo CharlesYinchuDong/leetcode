@@ -16,6 +16,9 @@ Graph traversal
 - [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
 - [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
 
+Game Playing
+- [464. Can I Win](https://leetcode.com/problems/can-i-win/)
+
 Template:
 ```py
 class Solution(object):
@@ -47,6 +50,7 @@ One dimension:
 - [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
 - [70. Climing Stairs](https://leetcode.com/problems/climbing-stairs/)
 - [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+- [256. Paint House](https://leetcode.com/problems/paint-house/)
 
 Two dimention:
 - [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
