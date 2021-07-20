@@ -174,6 +174,7 @@ def union(x, y):
 
 
 ### Binary search
+- [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)
 Two ways to do binary search.
 
 [l, h) - like bisect
