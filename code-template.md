@@ -174,6 +174,9 @@ def union(x, y):
 
 
 ### Binary search
+Two ways to do binary search.
+
+[l, h) - like bisect
 ```py
 l, h = 0, len(a)
 
@@ -186,6 +189,23 @@ while l < h:
         h = m
 
 return l
+```
+
+[l, h]
+```py
+l, h = 0, len(a)-1
+
+while l <= h:
+    m = (l + h) // 2
+
+    if :
+        return
+    elif:
+        l = m + 1
+    else:
+        h = m - 1
+
+return -1
 ```
 
 ### Substring and Subsequence
