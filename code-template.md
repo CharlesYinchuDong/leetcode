@@ -154,6 +154,7 @@ return res
 
 ### Union Find
 - [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+- [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)
 ```py
 parent = [0] * N
 def find(x):
